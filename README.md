@@ -119,6 +119,6 @@ qcam
 	$ qcam /etc/qcam/streamer.lua
 
 	Receive and playback video stream.
-	$ vlc rtsp://192.168.1.1/v2/video/avmuxstream
-	$ vlc http://192.168.1.1:8888/v2/video/mjpg/mjpgstream
+	$ vlc rtsp://192.168.100.1/v2/video/avmuxstream
+	$ vlc http://192.168.100.1:8888/v2/video/mjpg/mjpgstream
 
