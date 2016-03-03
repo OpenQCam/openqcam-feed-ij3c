@@ -1,0 +1,14 @@
+#!/bin/sh /etc/rc.common
+
+START=90
+
+start() {
+	echo start qcam.
+	qcam --daemon --pid=/var/run/qcam.pid /etc/qcam/streamer.lua
+}
+
+stop() {
+	echo stop qcam.
+	cat /var/run/qcam.pid | xargs kill -9 
+	rm -f /var/run/qcam.pid
+}
